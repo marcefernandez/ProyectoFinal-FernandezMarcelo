@@ -1,0 +1,365 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Montserrat-Light";
+    background-attachment: fixed;
+
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../assets/font/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "Lemonada-Regular";
+    src: url(../assets/font/Lemonada-Regular.ttf);
+}
+
+h1, h2, h3, h4{
+    font-family: "Lemonada-Regular";
+    src: url(../assets/font/Lemonada-Regular.ttf);
+    color:#f7096c;
+    text-align: center;
+    padding: 20px;
+}
+.logo{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
+.titulo{
+    font-size: 30px;
+}
+h1{
+    color:#f7096c;
+}
+
+
+h2{
+    font-size: 2.5rem;
+    color: #4a167a;
+}
+
+#top{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+}
+
+.menu{
+    list-style-type: none;
+    background-color: rgb(248, 117, 139);
+    padding:0;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 20px;
+    
+}
+
+.menu .item{
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.menu .item a{
+    color:#4a167a;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.menu .item a:hover{
+    color: aliceblue;
+}
+
+.menu .item:hover a{
+    background-color: #4a167a;
+    color: aliceblue;
+}
+
+.box{
+    position: left;
+    margin-left: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+}
+
+input.src{
+    margin-left: 30px;
+    padding: 9px 10px 9px 15px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 15px;
+    color:  #4a167a ;
+    border: 5px solid rgb(248, 117, 139) ;
+    text-align: center;
+    overflow: visible;
+}
+
+.section1{
+    background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.section2{
+    background-image: url("../assets/img/arcoiris.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.section1 p, .section2 p{
+    background-color: #f5c6f36c;
+    line-height: 2;
+    padding: 10px;
+}
+
+.section3{
+    margin: auto;
+    
+    margin-top: 500px;
+}
+
+.section3 .p__vid{
+    border: 5px;
+    border-color: #4a167a;
+    border: solid;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    
+    
+}
+
+
+.linea{
+    color:  #4a167a ;
+}
+
+/* estilo main contactos */
+
+.main-contactos{
+    display: grid;
+    margin-top: 50px;
+}
+
+.search-contactos{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.divform{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form1{
+    
+    margin: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    box-sizing: content-box;
+    border: #fa6e85 5px solid;
+}
+
+/* main nosotros */
+
+.main-nosotros { 
+    display: grid;
+    justify-content: center;
+}
+
+.nosotros__video{
+    margin-top: 200px;
+}
+
+
+
+
+
+.content-all{
+    width: 210px;
+    margin:auto;
+    perspective: 1000px;
+    position: relative;
+    
+    
+    
+    
+    
+}
+.content-carrousel{
+    
+    width: 100%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+    margin-top: 200px;
+    
+    
+    
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.content-carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+.content-carrousel figure:hover{
+        box-shadow: 0px 0px 0px 0px black;
+        transition: all 300ms;
+}
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg)
+    translateZ(400px);}
+
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(8){transform: rotateY(288deg)
+translateZ(400px);}
+
+.content-carrousel figure:nth-child(9){transform: rotateY(324deg)
+translateZ(400px);}
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg)
+translateZ(400px);}
+
+
+
+
+.container{
+    border: solid 5px #fa6e85 ;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border: 5px solid #fa6e85;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px #e2595933;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+    color: #4a167a;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+footer{
+    margin-top: 700px;
+    text-align: center;
+    height: 80px;
+
+
+}
+
+h5{
+    color: blueviolet;
+}
+
