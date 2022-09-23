@@ -41,6 +41,7 @@ h1, h2, h3, h4{
 }
 h1{
     color:#f7096c;
+    
 }
 
 
@@ -61,7 +62,7 @@ nav{
     list-style-type: none;
     background-color: rgb(248, 117, 139);
     padding:0;
-    width: 50%;
+    width: 70%;
     margin: 10px auto;
     border-radius: 20px;
     
@@ -90,9 +91,10 @@ nav{
 
 .menu .item:hover a{
     background-color: #4a167a;
-    color: aliceblue;
+    color: rgb(248, 117, 139);
+    border-radius: 15px;
 }
-
+/*
 .box{
     position: left;
     margin-left: 50px;
@@ -101,18 +103,8 @@ nav{
     transform: translate(-50%, -50%);
     width: 60px;
 }
+*/
 
-input.src{
-    margin-left: 30px;
-    padding: 9px 10px 9px 15px;
-    outline: none;
-    font-size: 20px;
-    border-radius: 15px;
-    color:  #4a167a ;
-    border: 5px solid rgb(248, 117, 139) ;
-    text-align: center;
-    overflow: visible;
-}
 
 .section1{
     background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview.jpg");
@@ -153,13 +145,13 @@ input.src{
     margin-top: 500px;
 }
 
-.section3 .p__vid{
+.p__vid{
     border: 5px;
-    border-color: #4a167a;
-    border: solid;
+    border: 3px solid rgb(248, 117, 139);
     width: 500px;
     height: 200px;
     margin: auto;
+    padding: 5px;
     
     
 }
@@ -211,7 +203,14 @@ input.src{
 
 
 
-
+.carrousel-p{
+    display: flex;
+    border: 3px solid #fa6e85 ;
+    width: 500px;
+    margin-left: 385px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
 
 .content-all{
     width: 210px;
@@ -300,10 +299,9 @@ translateZ(400px);}
 
 
 
-.container{
-    border: solid 5px #fa6e85 ;
-    width: 1200px;
-    height: 500px;
+.container-productos{
+   
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -312,7 +310,7 @@ translateZ(400px);}
     align-items: center;
 }
 
-.container .card{
+.container-productos .card{
     width: 330px;
     height: 430px;
     border: 5px solid #fa6e85;
@@ -324,28 +322,28 @@ translateZ(400px);}
     transition: all 0.25s;
 }
 
-.container .card:hover{
+.container-productos .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container .card img{
+.container-productos .card img{
     width: 330px;
     height: 220px;
 }
 
-.container .card h4{
+.container-productos .card h4{
     font-weight: 600;
     color: #4a167a;
 }
 
-.container .card p{
+.container-productos .card p{
     padding: 0 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
-.container .card a {
+.container-productos .card a {
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
@@ -362,4 +360,120 @@ footer{
 h5{
     color: blueviolet;
 }
+
+/* animacion redes sociales  para footer general*/
+
+.iconosredes{
+    color: white;
+    text-align: center;
+    
+}
+
+.icon{
+    
+    display: inline-block;
+    margin:auto;
+    padding: 5px;
+    animation: float 5s ease-in-out infinite;
+    transition: 4s;
+}
+
+.fbline{
+    animation-delay: 1s;
+}
+
+.instagram{
+    animation-delay: 2s;
+}
+
+.whats{
+    animation-delay: 2s;
+}
+
+.gmail{
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(1);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(1);
+    }
+}
+
+@media ( max-width:600px) {
+    
+    .content-carrousel{
+        display: none;
+    }
+    .carrousel-p{
+        display: none;
+    }
+    main {
+        display:flex ;
+        flex-direction: column;
+        margin-top: -650px;
+    }
+    h5{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        
+    }
+    .carouselExampleIndicators{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr) ;
+        grid-template-rows:0.5fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+        "header" 
+        "carro"
+        "carro"
+        "footer";
+    }
+    header{
+        grid-area: header;
+        margin-bottom: 700px;
+
+    }
+    .carousel{
+        grid-area: carro;
+    
+    }
+    footer{
+        grid-area: footer;
+    }
+    .section3{display: block;
+        margin-top: -200px;
+    }
+    .p__vid{
+        width: 450px;
+        overflow-y: scroll;
+    }
+    .section1{
+        overflow-y: scroll;
+    }
+    .section2{
+        overflow-y: scroll;
+    }
+    .divform{
+        margin-top: -700px;
+        padding-bottom: 600px
+    }
+    .footer-contactos{
+        
+        margin-top: 300px;
+        
+    }
+    
+
+
+    }
 
