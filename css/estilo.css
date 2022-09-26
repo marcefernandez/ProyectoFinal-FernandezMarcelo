@@ -211,7 +211,6 @@ h2{
     padding: 10px;
     margin: auto;
     margin-top: 50px;
-  
 }
 
 .content-all{
@@ -219,12 +218,8 @@ h2{
     margin:auto;
     perspective: 1000px;
     position: relative;
-    
-    
-    
-    
-    
 }
+
 .content-carrousel{
     
     width: 100%;
@@ -232,9 +227,6 @@ h2{
     animation: rotar 10s infinite linear;
     transform-style: preserve-3d;
     margin-top: 200px;
-    
-    
-    
 }
 .content-carrousel:hover{
     animation-play-state: paused;
