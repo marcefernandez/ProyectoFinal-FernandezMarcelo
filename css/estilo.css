@@ -204,6 +204,17 @@ h2{
 .nosotros__video{
     margin-top: 200px;
 }
+.info-nosotros{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 50%;
+    height: 200px;
+    border: #fa6e85 solid 5px;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-y: scroll;
+}
 
 
 
@@ -419,14 +430,12 @@ h5{
     main {
         display:flex ;
         flex-direction: column;
-        /* margin-top: -650px;*/
-    }/*
-    .googlemap{
-        width: 400px;
-        margin: auto;
-        margin-top: 20px;
-        border-radius: 10px;
-    }*/
+    }
+    .info-nosotros{
+        border: #fa6e85 solid 5px;
+        border-radius: 15px;
+        padding: 5px;
+    }
     .menu{
         display: flex;
         width: 30%;
