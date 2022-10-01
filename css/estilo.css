@@ -31,6 +31,7 @@ h1, h2, h3  {
     text-align: center;
     
 }
+/*estilo header*/
 .logo{
     margin: 30px;
     width: 80px;
@@ -50,7 +51,7 @@ h2{
     justify-content: center;
     margin-top: 10px;
 }
-
+/*estilo nav*/
 .navegador{
     display: flex;
     flex-direction: row;
@@ -64,8 +65,8 @@ h2{
 }
 .menu .item{
     display:inline-block;
-    flex-direction: relative;
-    justify-content:center;
+    flex-direction:row;
+    
 
 }
 
@@ -74,7 +75,7 @@ h2{
     text-decoration: none;
     font-weight: bold;
     display:flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 15px;
 
 }
@@ -88,21 +89,10 @@ h2{
     color: rgb(248, 117, 139);
     border-radius: 15px;
 }
-/*
-.box{
-    position: left;
-    margin-left: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-}
-*/
-
 
 .section1{
-    background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview.jpg");
-    height: 500px;
+    background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview2.jpg");
+    height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,8 +104,8 @@ h2{
 }
 
 .section2{
-    background-image: url("../assets/img/arcoiris.jpg");
-    height: 500px;
+    background-image: url("../assets/img/arcoiris2.jpg");
+    height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,19 +128,18 @@ h2{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 500px;
+    margin-top: -100px;
 }
 
 .p__vid{
-   
+    
     border: 3px solid rgb(248, 117, 139);
     border-radius: 15px;
     width: 500px;
     margin: auto;
     padding: 5px;
-    
-    
-}
+    text-align: center;
+    }    
 
 
 .linea{
@@ -202,7 +191,8 @@ h2{
 }
 
 .nosotros__video{
-    margin-top: 200px;
+    margin-top: 150px;
+    
 }
 .info-nosotros{
     display: flex;
@@ -216,66 +206,6 @@ h2{
     overflow-y: scroll;
 }
 
-
-
-.carrousel-p{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid #fa6e85;
-    border-radius: 15px;
-    width: 250px;
-    padding: 10px;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.content-all{
-    width: 210px;
-    margin:auto;
-    perspective: 1000px;
-    position: relative;
-}
-
-.content-carrousel{
-    
-    width: 100%;
-    position: absolute;
-    animation: rotar 10s infinite linear;
-    transform-style: preserve-3d;
-    margin-top: 200px;
-}
-.content-carrousel:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-.content-carrousel figure{
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
-    position: absolute;
-    box-shadow: 0px 0px 20px 0px black;
-    transition: all 300ms;
-}
-.content-carrousel figure:hover{
-        box-shadow: 0px 0px 0px 0px black;
-        transition: all 300ms;
-}
-.content-carrousel img{
-    width: 100%;
-    transition: all 300ms;
-}
-.content-carrousel img:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-
-}
-@keyframes rotar{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(360deg);
-    }
-}
 
 .content-carrousel figure:nth-child(1){transform: rotateY(0deg)
     translateZ(400px);}
@@ -417,6 +347,7 @@ h5{
     body{
         display: block;
     }
+
     .titulo{
         display: none;
     }
@@ -435,6 +366,10 @@ h5{
         border: #fa6e85 solid 5px;
         border-radius: 15px;
         padding: 5px;
+    }
+    .nosotros__video{
+        margin-top: 150px;
+        
     }
     .menu{
         display: flex;
