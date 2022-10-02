@@ -61,7 +61,8 @@ h2{
 .menu{
     display: flex;
     border-radius: 15px;
-    
+    background-color: #fa6e85;
+    border-radius: 15px;
 }
 .menu .item{
     display:inline-block;
@@ -78,17 +79,28 @@ h2{
     align-items: center;
     padding: 15px;
 
-}
+}/*
 
 .menu .item a:hover{
     color: aliceblue;
-}
+}*/
 
 .menu .item:hover a{
     background-color: #4a167a;
     color: rgb(248, 117, 139);
     border-radius: 15px;
 }
+.numero_uno{
+    width: 80%;
+    border: #fa6e85 5px solid;
+    border-radius: 15px;
+    display:block;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+/*secciones nosotros*/
 
 .section1{
     background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview2.jpg");
@@ -238,7 +250,7 @@ translateZ(400px);}
 
 
 
-
+/*estilo productos*/
 .container-productos{
     display: flex;
     flex-wrap: wrap;
@@ -289,11 +301,50 @@ translateZ(400px);}
     padding: 5px;
     border-radius: 8px;
 
+}    
+/*estilo servicios*/
+
+.info_servicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    border:5px solid #fa6e85;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #f5c6f36c;
+    line-height: 2;
+    padding: 10px;
     
-
-
-
 }
+
+.info_constru{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #fa6e85;
+    border-radius: 15px;
+    width: 90%;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #f5c6f36c;
+    line-height: 2;
+    padding: 10px;
+    
+}
+
+.img_ase{
+    width: 50vh;
+    
+}
+.img_const{
+    width: 50vh;
+}
+
+
 
 /*estilo footer*/
 
@@ -358,10 +409,38 @@ h5{
     .carrousel-p{
         display: none;
     }
-    main {
+    .main {
         display:flex ;
         flex-direction: column;
     }
+    /*estilo servicios*/
+    .info_servicios{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border:5px solid #fa6e85;
+        border-radius: 15px;
+        width: 90%;
+        padding: 10px;
+    }
+    .img_ase{
+        margin: auto
+    }
+    .img_const{
+        margin: auto;
+    }
+    .info_constru{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 5px solid #fa6e85;
+        border-radius: 15px;
+        width: 90%;
+        margin-top: 20px;
+    }
+    /*estilo nosotros*/
     .info-nosotros{
         border: #fa6e85 solid 5px;
         border-radius: 15px;
