@@ -1,3 +1,7 @@
+@import "partials/variables";
+@import "partials/extend";
+@import "partials/mixin";
+
 *{
     margin: 0%;
     padding: 0%;
@@ -26,10 +30,9 @@ body{
 /*estilo header*/
 header{
     #top{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @extend %flex;
         margin-top: 10px;
+        color: $colorDos;
         .logo{
             margin: 30px;
             width: 80px;
@@ -37,22 +40,22 @@ header{
         }
         .titulo{
             margin-top: 70px;
+            font-family: "Lemonada-Regular";
+            color: #F968B7 ;
         } 
     }
     .navegador{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @extend %flex;
         .menu{
             display: flex;
             border-radius: 15px;
-            background-color: #fa6e85;
+            background-color: $colorUno;
             .item{
                 display: flex;
                 flex-direction:row;
                 align-content: center;
                 a{
-                    color:#4a167a;
+                    color:$colorDos;
                     text-decoration: none;
                     font-weight: bold;
                     display:flex;
@@ -60,8 +63,8 @@ header{
                     padding: 15px;
                     
                     &:hover{
-                        background-color: #4a167a;
-                        color: rgb(248, 117, 139);
+                        background-color: $colorDos;
+                        color: $colorUno;
                         border-radius: 15px;
                     }    
                 }
@@ -75,12 +78,14 @@ header{
 main{
     .numero_uno{
         width: 80%;
-        border: #fa6e85 5px solid;
+        border: $colorUno 5px solid;
         border-radius: 15px;
         display:block;
         margin: auto;
         padding: 20px;
         margin-bottom: 20px;
+        font-family: "Lemonada-Regular";
+        color: $colorDos;
         /*estilo nosotros*/
     }
     .info-nosotros{
@@ -89,55 +94,45 @@ main{
         margin:auto;
         width: 50%;
         height: 200px;
-        border: #fa6e85 solid 5px;
+        border: $colorUno solid 5px;
         border-radius: 15px;
         padding: 5px;
         overflow-y: scroll;
+        color: $colorDos;
     }
     .section1{
         background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview2.jpg");
-        height: 300px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 30px;
-        margin: 50px;
-        border-radius: 50px;
-        overflow: hidden;
+        @include nosInfo;
         
         h2{
             margin-top: 10px;
             text-align: center;
+            font-family: "Lemonada-Regular";
+            color: $colorUno;
         }
         p{
             text-align: center;
             padding: 30px;
+            color: $colorDos;
         }
     }
     .section2{
         background-image: url("../assets/img/arcoiris2.jpg");
-        height: 300px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 30px;
-        margin: 50px;
-        border-radius: 50px;
-        overflow: hidden;
-        
+        @include nosInfo;
         h2{
             margin-top: 30px;
             text-align: center;
+            font-family: "Lemonada-Regular";
+            color: $colorUno;
         }
         p{
             text-align: center;
             padding: 30px;
+            color: $colorDos;
         }
     }
     .section1 p, .section2 p{
-        background-color: #f5c6f36c;
+        background-color: $colorTres;
         line-height: 2;
         padding: 10px;
     }
@@ -151,12 +146,13 @@ main{
             margin-top: 150px;
         }
         .p__vid{
-            border: 3px solid rgb(248, 117, 139);
+            border: 3px solid $colorUno;
             border-radius: 15px;
             width: 500px;
             margin: auto;
             padding: 5px;
             text-align: center;
+            color: $colorDos;
         }    
     }
 }
@@ -174,8 +170,12 @@ main{
             width: 300px;
             height: 200px;
             box-sizing: content-box;
-            border: #fa6e85 5px solid;
+            border: $colorUno 5px solid;
             border-radius: 15px;
+            color: $colorDos;
+            h3{
+                font-family: "Lemonada-Regular";
+            }
         }
     }
     .mapaGoog{
@@ -192,6 +192,8 @@ main{
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+        font-family: "Lemonada-Regular";
+        color: $colorDos;
     }
 
     .container-productos{
@@ -204,7 +206,7 @@ main{
         .card{
             width: 330px;
             height: 430px;
-            border: 5px solid #fa6e85;
+            border: 5px solid $colorUno;
             border-radius: 8px;
             box-shadow: 0 2px 2px #e2595933;
             overflow: hidden;
@@ -215,8 +217,9 @@ main{
                 width: 330px;
                 height: 220px;
             }
-            h4{
-                color: #4a167a;
+            h3{
+                font-family: "Lemonada-Regular";
+                color: $colorUno;
             }    
             &:hover{
                 transform: translateY(-15px);
@@ -227,12 +230,13 @@ main{
                 font-size: 16px;
                 font-weight: 300;
                 margin-bottom: 20px;
+                color: $colorDos;
             }
             a{
                 font-weight: 500;
                 text-decoration: none;
-                color: #fa6e85;
-                border:5px solid  #fa6e85;
+                color: $colorUno;
+                border:5px solid  $colorUno;
                 padding: 5px;
                 border-radius: 8px;
             }    
@@ -247,12 +251,19 @@ main{
         align-items: center;
         margin: auto;
         text-align: center;
-        border:5px solid #fa6e85;
+        border:5px solid $colorUno;
         width: 90%;
         border-radius: 15px;
-        background-color: #f5c6f36c;
+        background-color: $colorTres;
         line-height: 2;
         padding: 10px;
+        h3{
+            font-family: "Lemonada-Regular";
+            color: $colorDos;
+        }
+        p{
+            color: $colorDos;
+        }
         .img_ase{
             width: 50vh;
         }
@@ -263,14 +274,21 @@ main{
         align-items: center;
         margin: auto;
         text-align: center;
-        border: 5px solid #fa6e85;
+        border: 5px solid $colorUno;
         border-radius: 15px;
         width: 90%;
         margin-top: 20px;
         overflow: hidden;
-        background-color: #f5c6f36c;
+        background-color: $colorTres;
         line-height: 2;
         padding: 10px;
+        h3{
+            font-family: "Lemonada-Regular";
+            color: $colorDos;
+        }
+        p{
+            color: $colorDos;
+        }
         .img_const{
             width: 50vh;
         }
@@ -281,8 +299,12 @@ footer{
     margin-top: 100px;
     text-align: center;
     height: 80px;
+    .hfoot{
+        color:$colorDos;
+        font-family: "Lemonada-Regular";
+    }
     .linea{
-        color:  #4a167a ;
+        color:  $colorDos ;
     }
     /* animacion redes sociales*/
     .icon{
@@ -313,6 +335,12 @@ footer{
         }
     }
 }
+.logo-bajo{
+    width: 45px;
+    height: 45px;
+    padding-bottom: 10px;
+
+}
 /*inicio media*/
 @media ( max-width:600px) {
     body{
@@ -336,7 +364,7 @@ footer{
             flex-direction: column;
             margin: auto;
             text-align: center;
-            border:5px solid #fa6e85;
+            border:5px solid $colorUno;
             border-radius: 15px;
             width: 90%;
             padding: 10px;
@@ -351,7 +379,7 @@ footer{
             flex-direction: column;
             margin: auto;
             text-align: center;
-            border: 5px solid #fa6e85;
+            border: 5px solid $colorUno;
             border-radius: 15px;
             width: 90%;
             margin-top: 20px;
@@ -363,7 +391,7 @@ footer{
         /*estilo index*/
         .numero_uno{
             width: 80%;
-            border: #fa6e85 5px solid;
+            border: $colorUno 5px solid;
             border-radius: 15px;
             display:block;
             margin: auto;

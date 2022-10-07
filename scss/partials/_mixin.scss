@@ -1,0 +1,11 @@
+@mixin nosInfo{
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}

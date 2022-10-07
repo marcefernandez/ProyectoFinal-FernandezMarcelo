@@ -1,3 +1,8 @@
+header #top, header .navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -22,40 +27,36 @@ body {
 
 /*estilo header*/
 header #top {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px; }
+  margin-top: 10px;
+  color: #4a167a; }
   header #top .logo {
     margin: 30px;
     width: 80px;
     height: 80px; }
   header #top .titulo {
-    margin-top: 70px; }
+    margin-top: 70px;
+    font-family: "Lemonada-Regular";
+    color: #F968B7; }
 
-header .navegador {
+header .navegador .menu {
   display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  header .navegador .menu {
+  border-radius: 15px;
+  background-color: #fa6e85; }
+  header .navegador .menu .item {
     display: flex;
-    border-radius: 15px;
-    background-color: #fa6e85; }
-    header .navegador .menu .item {
+    flex-direction: row;
+    align-content: center; }
+    header .navegador .menu .item a {
+      color: #4a167a;
+      text-decoration: none;
+      font-weight: bold;
       display: flex;
-      flex-direction: row;
-      align-content: center; }
-      header .navegador .menu .item a {
-        color: #4a167a;
-        text-decoration: none;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        padding: 15px; }
-        header .navegador .menu .item a:hover {
-          background-color: #4a167a;
-          color: #f8758b;
-          border-radius: 15px; }
+      justify-content: center;
+      padding: 15px; }
+      header .navegador .menu .item a:hover {
+        background-color: #4a167a;
+        color: #fa6e85;
+        border-radius: 15px; }
 
 /*estilo index*/
 main .numero_uno {
@@ -66,6 +67,8 @@ main .numero_uno {
   margin: auto;
   padding: 20px;
   margin-bottom: 20px;
+  font-family: "Lemonada-Regular";
+  color: #4a167a;
   /*estilo nosotros*/ }
 
 main .info-nosotros {
@@ -77,7 +80,8 @@ main .info-nosotros {
   border: #fa6e85 solid 5px;
   border-radius: 15px;
   padding: 5px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  color: #4a167a; }
 
 main .section1 {
   background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview2.jpg");
@@ -86,16 +90,19 @@ main .section1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 15px;
   margin: 50px;
   border-radius: 50px;
   overflow: hidden; }
   main .section1 h2 {
     margin-top: 10px;
-    text-align: center; }
+    text-align: center;
+    font-family: "Lemonada-Regular";
+    color: #fa6e85; }
   main .section1 p {
     text-align: center;
-    padding: 30px; }
+    padding: 30px;
+    color: #4a167a; }
 
 main .section2 {
   background-image: url("../assets/img/arcoiris2.jpg");
@@ -104,16 +111,19 @@ main .section2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 15px;
   margin: 50px;
   border-radius: 50px;
   overflow: hidden; }
   main .section2 h2 {
     margin-top: 30px;
-    text-align: center; }
+    text-align: center;
+    font-family: "Lemonada-Regular";
+    color: #fa6e85; }
   main .section2 p {
     text-align: center;
-    padding: 30px; }
+    padding: 30px;
+    color: #4a167a; }
 
 main .section1 p, main .section2 p {
   background-color: #f5c6f36c;
@@ -129,12 +139,13 @@ main .section3 {
   main .section3 .nosotros__video {
     margin-top: 150px; }
   main .section3 .p__vid {
-    border: 3px solid #f8758b;
+    border: 3px solid #fa6e85;
     border-radius: 15px;
     width: 500px;
     margin: auto;
     padding: 5px;
-    text-align: center; }
+    text-align: center;
+    color: #4a167a; }
 
 /* estilo main contactos */
 main .divform {
@@ -150,7 +161,10 @@ main .divform {
     height: 200px;
     box-sizing: content-box;
     border: #fa6e85 5px solid;
-    border-radius: 15px; }
+    border-radius: 15px;
+    color: #4a167a; }
+    main .divform .form1 h3 {
+      font-family: "Lemonada-Regular"; }
 
 main .mapaGoog .googlemap {
   display: flex;
@@ -161,7 +175,9 @@ main .p-center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: "Lemonada-Regular";
+  color: #4a167a; }
 
 main .container-productos {
   display: flex;
@@ -183,8 +199,9 @@ main .container-productos {
     main .container-productos .card img {
       width: 330px;
       height: 220px; }
-    main .container-productos .card h4 {
-      color: #4a167a; }
+    main .container-productos .card h3 {
+      font-family: "Lemonada-Regular";
+      color: #fa6e85; }
     main .container-productos .card:hover {
       transform: translateY(-15px);
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
@@ -192,12 +209,13 @@ main .container-productos {
       padding: 0 1rem;
       font-size: 16px;
       font-weight: 300;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      color: #4a167a; }
     main .container-productos .card a {
       font-weight: 500;
       text-decoration: none;
       color: #fa6e85;
-      border: 5px solid  #fa6e85;
+      border: 5px solid #fa6e85;
       padding: 5px;
       border-radius: 8px; }
 
@@ -214,6 +232,11 @@ main .info_servicios {
   background-color: #f5c6f36c;
   line-height: 2;
   padding: 10px; }
+  main .info_servicios h3 {
+    font-family: "Lemonada-Regular";
+    color: #4a167a; }
+  main .info_servicios p {
+    color: #4a167a; }
   main .info_servicios .img_ase {
     width: 50vh; }
 
@@ -231,6 +254,11 @@ main .info_constru {
   background-color: #f5c6f36c;
   line-height: 2;
   padding: 10px; }
+  main .info_constru h3 {
+    font-family: "Lemonada-Regular";
+    color: #4a167a; }
+  main .info_constru p {
+    color: #4a167a; }
   main .info_constru .img_const {
     width: 50vh; }
 
@@ -240,6 +268,9 @@ footer {
   text-align: center;
   height: 80px;
   /* animacion redes sociales*/ }
+  footer .hfoot {
+    color: #4a167a;
+    font-family: "Lemonada-Regular"; }
   footer .linea {
     color: #4a167a; }
   footer .icon {
@@ -262,6 +293,11 @@ footer {
     transform: translateY(-10px); }
   100% {
     transform: translateY(1); } }
+
+.logo-bajo {
+  width: 45px;
+  height: 45px;
+  padding-bottom: 10px; }
 
 /*inicio media*/
 @media (max-width: 600px) {
