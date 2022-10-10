@@ -75,6 +75,7 @@ main .info-nosotros {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 20px;
   width: 50%;
   height: 200px;
   border: #fa6e85 solid 5px;
@@ -155,16 +156,20 @@ main .divform {
   main .divform .form1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
     width: 300px;
-    height: 200px;
+    height: 350px;
     box-sizing: content-box;
     border: #fa6e85 5px solid;
     border-radius: 15px;
     color: #4a167a; }
     main .divform .form1 h3 {
-      font-family: "Lemonada-Regular"; }
+      font-family: "Lemonada-Regular";
+      margin-left: 30px; }
+    main .divform .form1 p {
+      padding: 10px;
+      margin-left: 20px; }
 
 main .mapaGoog .googlemap {
   display: flex;
