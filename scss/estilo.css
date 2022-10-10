@@ -1,0 +1,428 @@
+header .navegador, header #top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  background-image: url(../assets/img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Montserrat-Light";
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../assets/font/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Lemonada-Regular";
+  src: url(../assets/font/Lemonada-Regular.ttf);
+}
+/*estilo header*/
+header #top {
+  margin-top: 10px;
+  color: #4a167a;
+}
+header #top .logo {
+  margin: 30px;
+  width: 80px;
+  height: 80px;
+}
+header #top .titulo {
+  margin-top: 70px;
+  font-family: "Lemonada-Regular";
+  color: #F968B7;
+}
+header .navegador .menu {
+  display: flex;
+  border-radius: 15px;
+  background-color: #fa6e85;
+}
+header .navegador .menu .item {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+header .navegador .menu .item a {
+  color: #4a167a;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+header .navegador .menu .item a:hover {
+  background-color: #4a167a;
+  color: #fa6e85;
+  border-radius: 15px;
+}
+
+/*estilo index*/
+main .numero_uno {
+  width: 80%;
+  border: #fa6e85 5px solid;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "Lemonada-Regular";
+  color: #4a167a;
+  /*estilo nosotros*/
+}
+main .info-nosotros {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  height: 200px;
+  border: #fa6e85 solid 5px;
+  border-radius: 15px;
+  padding: 5px;
+  overflow-y: scroll;
+  color: #4a167a;
+}
+main .section1 {
+  background-image: url("../assets/img/letters-toys-learning-children-wallpaper-preview2.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  margin: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+main .section1 h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Lemonada-Regular";
+  color: #fa6e85;
+}
+main .section1 p {
+  text-align: center;
+  padding: 30px;
+  color: #4a167a;
+}
+main .section2 {
+  background-image: url("../assets/img/arcoiris2.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  margin: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+main .section2 h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Lemonada-Regular";
+  color: #fa6e85;
+}
+main .section2 p {
+  text-align: center;
+  padding: 30px;
+  color: #4a167a;
+}
+main .section1 p, main .section2 p {
+  background-color: rgba(245, 198, 243, 0.4235294118);
+  line-height: 2;
+  padding: 10px;
+}
+main .section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: -100px;
+}
+main .section3 .nosotros__video {
+  margin-top: 150px;
+}
+main .section3 .p__vid {
+  border: 3px solid #fa6e85;
+  border-radius: 15px;
+  width: 500px;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  color: #4a167a;
+}
+
+/* estilo main contactos */
+main .divform {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+main .divform .form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  box-sizing: content-box;
+  border: #fa6e85 5px solid;
+  border-radius: 15px;
+  color: #4a167a;
+}
+main .divform .form1 h3 {
+  font-family: "Lemonada-Regular";
+}
+main .mapaGoog .googlemap {
+  display: flex;
+  flex-direction: column;
+}
+
+/*estilo main productos*/
+main .p-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Lemonada-Regular";
+  color: #4a167a;
+}
+main .container-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  align-items: center;
+}
+main .container-productos .card {
+  width: 330px;
+  height: 430px;
+  border: 5px solid #fa6e85;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(226, 89, 89, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+main .container-productos .card img {
+  width: 330px;
+  height: 220px;
+}
+main .container-productos .card h3 {
+  font-family: "Lemonada-Regular";
+  color: #fa6e85;
+}
+main .container-productos .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+main .container-productos .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #4a167a;
+}
+main .container-productos .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fa6e85;
+  border: 5px solid #fa6e85;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/*estilo servicios*/
+main .info_servicios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  border: 5px solid #fa6e85;
+  width: 90%;
+  border-radius: 15px;
+  background-color: rgba(245, 198, 243, 0.4235294118);
+  line-height: 2;
+  padding: 10px;
+}
+main .info_servicios h3 {
+  font-family: "Lemonada-Regular";
+  color: #4a167a;
+}
+main .info_servicios p {
+  color: #4a167a;
+}
+main .info_servicios .img_ase {
+  width: 50vh;
+}
+main .info_constru {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  border: 5px solid #fa6e85;
+  border-radius: 15px;
+  width: 90%;
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: rgba(245, 198, 243, 0.4235294118);
+  line-height: 2;
+  padding: 10px;
+}
+main .info_constru h3 {
+  font-family: "Lemonada-Regular";
+  color: #4a167a;
+}
+main .info_constru p {
+  color: #4a167a;
+}
+main .info_constru .img_const {
+  width: 50vh;
+}
+
+/*estilo footer*/
+footer {
+  margin-top: 100px;
+  text-align: center;
+  height: 80px;
+  /* animacion redes sociales*/
+}
+footer .hfoot {
+  color: #4a167a;
+  font-family: "Lemonada-Regular";
+}
+footer .linea {
+  color: #4a167a;
+}
+footer .icon {
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+  animation: float 3s ease-in-out infinite;
+  transition: 2s;
+}
+footer .icon .fbline {
+  animation-delay: 1s;
+}
+footer .icon .instagram {
+  animation-delay: 2s;
+}
+footer .icon .whats {
+  animation-delay: 0s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(1);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+
+.logo-bajo {
+  width: 45px;
+  height: 45px;
+  padding-bottom: 10px;
+}
+
+/*inicio media*/
+@media (max-width: 600px) {
+  body {
+    display: block;
+    /*main mobile*/
+  }
+  body .titulo {
+    display: none;
+  }
+  body .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20px;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    /*estilo servicios*/
+    /*estilo index*/
+    /*estilo nosotros*/
+  }
+  body main .info_servicios {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #fa6e85;
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    overflow: hidden;
+  }
+  body main .info_servicios .img_ase {
+    width: 260px;
+    margin: auto;
+  }
+  body main .info_constru {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #fa6e85;
+    border-radius: 15px;
+    width: 90%;
+    margin-top: 20px;
+  }
+  body main .info_constru .img_const {
+    width: 260px;
+    margin: auto;
+  }
+  body main .numero_uno {
+    width: 80%;
+    border: #fa6e85 5px solid;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  body main .carouselExampleIndicators {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas: "header" "carro" "carro" "footer";
+  }
+  body main .section3 {
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .section3 .p__vid {
+    width: 440px;
+    padding: 5px;
+  }
+  body main .section1 {
+    overflow-y: scroll;
+  }
+  body main .section2 {
+    overflow-y: scroll;
+  }
+}/*# sourceMappingURL=estilo.css.map */
