@@ -99,7 +99,7 @@ main .section1 {
     margin-top: 10px;
     text-align: center;
     font-family: "Lemonada-Regular";
-    color: #fa6e85; }
+    color: #4a167a; }
   main .section1 p {
     text-align: center;
     padding: 30px;
@@ -120,7 +120,7 @@ main .section2 {
     margin-top: 30px;
     text-align: center;
     font-family: "Lemonada-Regular";
-    color: #fa6e85; }
+    color: #4a167a; }
   main .section2 p {
     text-align: center;
     padding: 30px;
@@ -169,7 +169,8 @@ main .divform {
       margin-left: 30px; }
     main .divform .form1 p {
       padding: 10px;
-      margin-left: 20px; }
+      margin-left: 20px;
+      font-weight: bolder; }
 
 main .mapaGoog .googlemap {
   display: flex;
@@ -241,7 +242,8 @@ main .info_servicios {
     font-family: "Lemonada-Regular";
     color: #4a167a; }
   main .info_servicios p {
-    color: #4a167a; }
+    color: #4a167a;
+    font-weight: bold; }
   main .info_servicios .img_ase {
     width: 50vh; }
 
@@ -263,7 +265,8 @@ main .info_constru {
     font-family: "Lemonada-Regular";
     color: #4a167a; }
   main .info_constru p {
-    color: #4a167a; }
+    color: #4a167a;
+    font-weight: bold; }
   main .info_constru .img_const {
     width: 50vh; }
 

@@ -109,7 +109,7 @@ main{
             margin-top: 10px;
             text-align: center;
             font-family: "Lemonada-Regular";
-            color: $colorUno;
+            color: $colorDos;
         }
         p{
             text-align: center;
@@ -124,7 +124,7 @@ main{
             margin-top: 30px;
             text-align: center;
             font-family: "Lemonada-Regular";
-            color: $colorUno;
+            color: $colorDos;
         }
         p{
             text-align: center;
@@ -181,6 +181,7 @@ main{
             p{
                 padding: 10px;
                 margin-left: 20px;
+                font-weight: bolder;
             }
         }
     }
@@ -268,6 +269,7 @@ main{
         }
         p{
             color: $colorDos;
+            font-weight: bold;
         }
         .img_ase{
             width: 50vh;
@@ -293,6 +295,7 @@ main{
         }
         p{
             color: $colorDos;
+            font-weight: bold;
         }
         .img_const{
             width: 50vh;
