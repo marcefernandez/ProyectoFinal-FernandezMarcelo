@@ -84,6 +84,7 @@ main .info-nosotros {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 20px;
   width: 50%;
   height: 200px;
   border: #fa6e85 solid 5px;
@@ -108,7 +109,7 @@ main .section1 h2 {
   margin-top: 10px;
   text-align: center;
   font-family: "Lemonada-Regular";
-  color: #fa6e85;
+  color: #4a167a;
 }
 main .section1 p {
   text-align: center;
@@ -131,7 +132,7 @@ main .section2 h2 {
   margin-top: 30px;
   text-align: center;
   font-family: "Lemonada-Regular";
-  color: #fa6e85;
+  color: #4a167a;
 }
 main .section2 p {
   text-align: center;
@@ -172,17 +173,28 @@ main .divform {
 main .divform .form1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
   width: 300px;
-  height: 200px;
+  height: 350px;
   box-sizing: content-box;
   border: #fa6e85 5px solid;
   border-radius: 15px;
   color: #4a167a;
 }
 main .divform .form1 h3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
   font-family: "Lemonada-Regular";
+  margin-left: 30px;
+  font-size: 1rem;
+}
+main .divform .form1 p {
+  display: flex;
+  margin-left: 20px;
+  font-weight: bolder;
+  padding: 5px;
 }
 main .mapaGoog .googlemap {
   display: flex;
@@ -207,6 +219,7 @@ main .container-productos {
   align-items: center;
 }
 main .container-productos .card {
+  background: transparent;
   width: 330px;
   height: 430px;
   border: 5px solid #fa6e85;
@@ -265,6 +278,7 @@ main .info_servicios h3 {
 }
 main .info_servicios p {
   color: #4a167a;
+  font-weight: bold;
 }
 main .info_servicios .img_ase {
   width: 50vh;
@@ -290,6 +304,7 @@ main .info_constru h3 {
 }
 main .info_constru p {
   color: #4a167a;
+  font-weight: bold;
 }
 main .info_constru .img_const {
   width: 50vh;
